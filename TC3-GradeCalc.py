@@ -16,9 +16,58 @@
 
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
+    
+    grade = 0
+    a = 4
+    b = 3
+    c = 2
+    d = 1
+    f = 0 
+    s = 0.3
 
+    
 
+    mark = input("Please enter your grade: ")
+    modifier = input("Please enter your modifier + or - : ")
 
+    
+    if mark.lower() == "a" and (modifier == "-"):
+        grade = a - s
+    elif mark.lower() == "a" and (modifier == "+"):
+        grade = a + s
+    elif mark.lower() == "a":
+        grade = a
+        
+        
+        if mark.lower() == "b" and (modifier == "-"):
+            grade = b - s
+        elif mark.lower() == "b" and (modifier == "+"):
+            grade = b + s
+        elif mark.lower() == "b":
+            grade = b
+        
+            
+            if mark.lower() == "c" and (modifier == "-"):
+                grade = c - s
+            elif mark.lower() == "c" and (modifier == "+"):
+                grade = c + s
+            elif mark.lower() == "c":
+                grade = c
+            
+                
+                if mark.lower() == "d"  and (modifier == "-"):
+                    grade = d - s
+                elif mark.lower() == "d" and (modifier == "+"):
+                    grade = d + s
+                if mark.lower() == "d":
+                    grade = d
+                
+    
+                    if mark.lower() == "f":
+                        grade = f
+                   
+
+    print("your grade is:", (grade))
 
 
 
